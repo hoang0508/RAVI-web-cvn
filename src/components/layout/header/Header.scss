@@ -1,0 +1,24 @@
+.header {
+  padding: 43px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-nav {
+    display: flex;
+    align-items: center;
+    gap: 0 34px;
+    &--list {
+      display: flex;
+      align-items: center;
+      gap: 0 10px;
+    }
+    &--text {
+      font-family: "Be Vietnam Pro", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: calc(20 / 16);
+      color: var(--black100);
+    }
+  }
+}
