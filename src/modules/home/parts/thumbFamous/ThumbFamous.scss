@@ -1,8 +1,8 @@
 .thumb-famous {
   margin-left: 20px;
   background: rgba(255, 255, 255, 0.7);
-  border-radius: 8px;
-  padding: 10px;
+  border-radius: 8px 0 0 8px;
+  padding: 10px 0 10px 10px;
   &--image {
     height: 98px;
     img {
@@ -18,5 +18,20 @@
   }
   .swiper-button-prev {
     display: none;
+  }
+  .swiper-button-next {
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    border-radius: 100rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 13px;
+    &::after {
+      font-size: 16px;
+      font-weight: bold;
+      color: var(--black100);
+    }
   }
 }
