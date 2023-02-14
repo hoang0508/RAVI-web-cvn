@@ -32,9 +32,6 @@ const HomeDestination = () => {
             grabCursor
             spaceBetween={20}
             slidesPerView={"auto"}
-            pagination={{
-              type: "fraction",
-            }}
             navigation={true}
             modules={[Pagination, Navigation]}
           >

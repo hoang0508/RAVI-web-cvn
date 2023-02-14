@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Banner } from "../components/banner";
 import { Gap } from "../components/common/gap";
+import BlogList from "../modules/blog/BlogList";
 import HomeDestination from "../modules/home/HomeDestination";
 import HomeFamousHotel from "../modules/home/HomeFamousHotel";
 import HomeHighlightHotel from "../modules/home/HomeHighlightHotel";
@@ -26,6 +27,13 @@ export function HomePage(props: IHomePageProps) {
         <HomeHighlightHotel></HomeHighlightHotel>
         <Gap />
         <HomeFamousHotel></HomeFamousHotel>
+        <Gap gap="gap-40" />
+        <HomeFamousHotel></HomeFamousHotel>
+        <Gap gap="gap-40" />
+        <HomeFamousHotel></HomeFamousHotel>
+        <Gap />
+        <BlogList />
+        <Gap gap="gap-120" />
       </div>
     </div>
   );

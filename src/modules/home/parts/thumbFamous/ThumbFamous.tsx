@@ -17,9 +17,6 @@ const ThumbFamous = () => {
         grabCursor
         spaceBetween={10}
         slidesPerView={"auto"}
-        pagination={{
-          type: "fraction",
-        }}
         navigation={true}
         modules={[Pagination, Navigation]}
       >

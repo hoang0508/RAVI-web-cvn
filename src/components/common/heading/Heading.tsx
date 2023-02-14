@@ -3,7 +3,7 @@ import "./Heading.scss";
 
 interface IHeading {
   heading: string;
-  className: string;
+  className?: string;
   size: string;
 }
 
