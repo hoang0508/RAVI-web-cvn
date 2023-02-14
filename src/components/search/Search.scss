@@ -1,0 +1,56 @@
+.search {
+  display: flex;
+  background-color: var(--white);
+  max-width: 960px;
+  margin: 0 auto;
+  border-radius: 8px;
+  height: 70px;
+  padding: 2px 2px 2px 0;
+  &-input--hotel {
+    display: flex;
+    width: 308px;
+    padding: 0 21px 0 19px;
+    input.input-location {
+      border: transparent;
+    }
+    span.icon-close {
+      margin-left: auto;
+    }
+  }
+  &-input--room {
+    max-width: 310px;
+    padding: 0 20px 0 22px;
+    .clendar-room {
+      display: flex;
+      align-items: center;
+      .input-text {
+        &--right {
+          padding-right: 20px;
+        }
+      }
+    }
+    .icon-horizontal {
+      padding: 0 21px;
+    }
+  }
+  &-input--user {
+    padding: 0 22px 0 20px;
+    .input-text {
+      padding-right: 35px;
+    }
+  }
+  .button-search {
+    width: 84px;
+    height: 66px;
+  }
+}
+
+.icon-search {
+  margin-right: 10px;
+}
+
+.input-text {
+  font-size: 14px;
+  line-height: (18/14);
+  color: var(--grayDefaulttMenu);
+}

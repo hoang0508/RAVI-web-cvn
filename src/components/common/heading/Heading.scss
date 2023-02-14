@@ -1,0 +1,15 @@
+.heading {
+  &--small {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: calc(40 / 32);
+    color: var(--black100);
+  }
+  &--big {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: calc(61 / 48);
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+}

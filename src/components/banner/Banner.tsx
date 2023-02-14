@@ -8,17 +8,13 @@ export interface IBannerProps {
 }
 
 const Banner = ({ heading, text }: IBannerProps) => {
+  const backgroundStyle = {
+    backgroundImage: `linear-gradient(0deg, rgba(37, 37, 37, 0.3), rgba(37, 37, 37, 0.3)), 
+    url(${BannerBg}`,
+    height: "552px",
+  };
   return (
-    <div
-      className="banner"
-      style={{
-        backgroundImage: `url(${BannerBg})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-        height: "552px",
-      }}
-    >
+    <div className="banner" style={backgroundStyle}>
       <h3 className="banner-title">
         <span>{heading}</span>
         <span>{text}</span>

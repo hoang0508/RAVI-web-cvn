@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   src: url("../../src/assets/fonts/Montserrat/Montserrat-Regular.ttf")
     format("opentype");
   font-style: normal;
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   src: url("../../src/assets/fonts/Montserrat/Montserrat-Light.ttf")
     format("opentype");
   font-style: normal;
@@ -17,7 +17,16 @@
 }
 
 @font-face {
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Montserrat";
+  src: url("../../src/assets/fonts/Montserrat/Montserrat-Bold.ttf")
+    format("opentype");
+  font-style: normal;
+  font-display: auto;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Be Vietnam Pro";
   src: url("../../src/assets/fonts/Be_Vietnam_Pro/BeVietnamPro-Bold.ttf")
     format("opentype");
   font-style: normal;
@@ -26,7 +35,7 @@
 }
 
 @font-face {
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Be Vietnam Pro";
   src: url("../../src/assets/fonts/Be_Vietnam_Pro/BeVietnamPro-Regular.ttf")
     format("opentype");
   font-style: normal;
@@ -35,7 +44,7 @@
 }
 
 @font-face {
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Be Vietnam Pro";
   src: url("../../src/assets/fonts/Be_Vietnam_Pro/BeVietnamPro-SemiBold.ttf")
     format("opentype");
   font-style: normal;

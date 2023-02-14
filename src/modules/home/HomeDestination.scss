@@ -1,0 +1,22 @@
+.destination {
+  gap: 0 85px;
+  &-content {
+    max-width: 297px;
+    width: 100%;
+    &--text {
+      font-size: 12px;
+      line-height: calc(15 / 12);
+      color: var(--black100);
+      margin-bottom: 8px;
+    }
+    .heading--small {
+      margin-bottom: 12px;
+    }
+    .text-banner {
+      color: var(--black100);
+    }
+  }
+  &-card {
+    width: 60%;
+  }
+}

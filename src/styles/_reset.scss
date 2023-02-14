@@ -16,8 +16,23 @@ video {
   max-width: 100%;
 }
 
+strong {
+  font-weight: bold;
+}
+
+input,
+button {
+  outline: none;
+  border: transparent;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
 body {
   min-height: 100vh;
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Be Vietnam Pro";
   font-weight: 400;
 }
