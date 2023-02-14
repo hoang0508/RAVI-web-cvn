@@ -1,0 +1,18 @@
+.select {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  margin-bottom: 20px;
+  .button-select {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    background: var(--white);
+    border-radius: 8px;
+    border: transparent;
+    &--active {
+      background-color: var(--primaryColor);
+      color: var(--white);
+    }
+  }
+}

@@ -7,3 +7,19 @@
   max-width: 1344px;
   margin: 0 auto;
 }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 20px;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
