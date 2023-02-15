@@ -2,7 +2,17 @@
   background-color: var(--white);
   border-radius: 8px;
   overflow: hidden;
+  transition: all 0.25s linear;
+  &:hover .card-image {
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.25s linear;
+  }
+  &:hover .card-image img {
+    opacity: 1;
+    transition: all 0.25s linear;
+  }
   .card-image {
+    background-color: rgba(0, 0, 0, 0.6);
     position: relative;
     &--img {
       height: 164px;
@@ -10,6 +20,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        opacity: 0.6;
       }
     }
   }
@@ -19,7 +30,6 @@
     position: absolute;
     top: 7px;
     right: 10px;
-    background-color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,4 +95,52 @@
       font-weight: 700;
     }
   }
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    border-radius: 100rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    &::after {
+      font-size: 10px;
+      color: var(--black100);
+      font-weight: 700;
+    }
+  }
+  .swiper-pagination {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s linear;
+    .swiper-pagination-bullet {
+      width: 4px;
+      height: 4px;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: var(--white);
+      width: 6px;
+      height: 6px;
+    }
+  }
+}
+
+.card:hover .swiper-button-next {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card:hover .swiper-button-prev {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card:hover .swiper-pagination {
+  opacity: 1;
+  visibility: visible;
 }

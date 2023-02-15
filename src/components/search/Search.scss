@@ -6,6 +6,35 @@
   border-radius: 8px;
   height: 70px;
   padding: 2px 2px 2px 0;
+  cursor: pointer;
+  .drop-input-hotel {
+    position: relative;
+    width: 308px;
+    .ant-select {
+      padding-left: 40px;
+      .ant-select-selector {
+        border: transparent;
+        .ant-select-selection-item {
+          font-family: "Be Vietnam Pro";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          color: var(--grayDefaulttMenu);
+        }
+      }
+      .ant-select-arrow {
+        left: 0;
+        margin-left: 20px;
+        top: 45%;
+        transform: translateY(-50%);
+        margin-top: unset;
+      }
+    }
+    .close-select {
+      margin-left: auto;
+      padding-right: 20px;
+    }
+  }
   &-input--hotel {
     display: flex;
     width: 308px;
@@ -53,4 +82,28 @@
   font-size: 14px;
   line-height: (18/14);
   color: var(--grayDefaulttMenu);
+}
+
+.room-input-clendar {
+  display: flex;
+  align-items: center;
+  max-width: 310px;
+  .ant-picker-input-active {
+    // // margin-left: 40px;
+    // input {
+    //   margin-right: 4px;
+    // }
+  }
+  .ant-picker-input {
+    width: 100px;
+    margin-left: 40px;
+    input {
+      font-size: 14px;
+      line-height: (18/14);
+      color: var(--grayDefaulttMenu);
+    }
+  }
+  .ant-picker-range-separator {
+    padding: 0;
+  }
 }

@@ -65,3 +65,62 @@
   color: var(--white);
   margin-bottom: 40px;
 }
+
+.ant-select-dropdown {
+  box-shadow: none;
+  top: 564px !important;
+  left: 14.5% !important;
+  width: 308px !important;
+  .ant-select-item-option-content {
+    .select-title {
+      padding: 16px 0 7px 0px;
+
+      font-family: "Be Vietnam Pro";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 10px;
+      line-height: 13px;
+      color: var(--grayDefaulttMenu);
+      text-transform: uppercase;
+    }
+  }
+  .ant-select-item {
+    padding: 10px 14px 10px 16px;
+  }
+  .ant-select-item-option-selected.select-item {
+    .ant-select-item-option-content {
+      .select-item--arrow {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  .select-item {
+    .ant-select-item-option-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .select-item--location {
+        display: flex;
+        align-items: center;
+        gap: 0 8px;
+        .select-item--text {
+          font-family: "Be Vietnam Pro";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+          color: var(--black100);
+        }
+      }
+      .select-item--arrow {
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.2s ease;
+      }
+    }
+  }
+  .ant-select-item:not(:last-child) {
+    // margin-bottom: 21px;
+  }
+}
