@@ -1,4 +1,5 @@
 import IconArrow from "./IconArrow";
+import IconArrowRight from "./IconArrowRight";
 import IconClendar from "./IconClendar";
 import IconClose from "./IconClose";
 import IconFacebook from "./IconFacebook";
@@ -9,6 +10,7 @@ import IconHotel from "./IconHotel";
 import IconIntagram from "./IconIntagram";
 import IconLine from "./IconLine";
 import IconLineV2 from "./IconLineV2";
+import IconLocation from "./IconLocation";
 import IconStar from "./IconStar";
 import IconUser from "./IconUser";
 import IconYouTube from "./IconYouTube";
@@ -28,4 +30,6 @@ export {
   IconIntagram,
   IconFacebook,
   IconYouTube,
+  IconLocation,
+  IconArrowRight,
 };

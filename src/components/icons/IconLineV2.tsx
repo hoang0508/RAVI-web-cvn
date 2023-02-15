@@ -15,8 +15,8 @@ const IconLineV2 = () => {
         x2="76.5"
         y2="0.5"
         stroke="#606060"
-        stroke-linecap="round"
-        stroke-dasharray="5 5"
+        strokeLinecap="round"
+        strokeDasharray="5 5"
       />
     </svg>
   );

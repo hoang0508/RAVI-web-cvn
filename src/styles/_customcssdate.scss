@@ -1,0 +1,42 @@
+.ant-picker-range {
+  border: 0;
+}
+
+:where(.css-dev-only-do-not-override-diro6f).ant-picker-range
+  .ant-picker-active-bar {
+  background-color: transparent;
+}
+
+:where(.css-dev-only-do-not-override-diro6f).ant-picker-focused {
+  border-color: transparent;
+  box-shadow: none;
+  outline: 0;
+}
+
+:where(.css-dev-only-do-not-override-diro6f).ant-picker-dropdown
+  .ant-picker-range-arrow {
+  width: 0;
+}
+
+:where(.css-dev-only-do-not-override-diro6f).ant-picker-dropdown
+  .ant-picker-header {
+  .ant-picker-header-super-prev-btn {
+    display: none;
+  }
+  .ant-picker-header-super-next-btn {
+    display: none;
+  }
+}
+
+.ant-picker {
+  height: 100%;
+}
+
+.ant-picker-suffix {
+  position: absolute;
+  left: 21px;
+  content: url(../../src/assets/images/Icon-clendar.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}

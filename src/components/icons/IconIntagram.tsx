@@ -22,8 +22,8 @@ const IconIntagram = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(2.8832 15.7169) scale(19.9721 19.9601)"
         >
-          <stop offset="0.09" stop-color="#FA8F21" />
-          <stop offset="0.78" stop-color="#D82D7E" />
+          <stop offset="0.09" stopColor="#FA8F21" />
+          <stop offset="0.78" stopColor="#D82D7E" />
         </radialGradient>
       </defs>
     </svg>
