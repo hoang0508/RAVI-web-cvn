@@ -16,7 +16,7 @@ export function HomePage(props: IHomePageProps) {
     <div className="container-fluid">
       <Banner heading="Đặt khách sạn dễ dàng" text="cùng RAVI" />
       <div className="container">
-        <HomeSearchNear></HomeSearchNear>
+        <HomeSearchNear />
         <Gap />
         <HomePromotion></HomePromotion>
         <Gap />

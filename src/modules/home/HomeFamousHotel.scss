@@ -1,6 +1,14 @@
 .famous-hotel {
+  .background {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0 10px 0;
+    height: 642px;
+    border-radius: 8px;
+  }
   .banner-global {
-    padding: 40px 0 197px 20px;
+    padding: 40px 0 0 20px;
     .heading--big {
       max-width: 623px;
       width: 100%;

@@ -9,8 +9,6 @@ const HomePromotion = () => {
       <BannerGlobal
         bannerImage={BannerImage2}
         className="banner-global"
-        height="384px"
-        borderRadius="4px"
         heading="Ưu đãi khuyến mại cuối năm 
         dành cho bạn"
         text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."

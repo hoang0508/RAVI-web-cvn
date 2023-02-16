@@ -1,0 +1,50 @@
+.card-item--hover {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 28px;
+    height: 28px;
+    background-color: #fff;
+    border-radius: 100rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    &::after {
+      font-size: 10px;
+      color: var(--black100);
+      font-weight: 700;
+    }
+  }
+  .swiper-pagination {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s linear;
+    .swiper-pagination-bullet {
+      width: 4px;
+      height: 4px;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: var(--white);
+      width: 6px;
+      height: 6px;
+    }
+  }
+}
+
+.card-item--hover:hover .swiper-button-next {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-item--hover:hover .swiper-button-prev {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-item--hover:hover .swiper-pagination {
+  opacity: 1;
+  visibility: visible;
+}

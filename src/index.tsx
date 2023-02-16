@@ -1,5 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
 import "./styles/index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";

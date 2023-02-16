@@ -5,9 +5,9 @@ import { Heading } from "../../components/common/heading";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
-import CardItemHomePage from "./card/CardItemHomePage";
 import "./HomeHighlightHotel.scss";
 import Select from "./parts/select/Select";
+import CardItemHomePage from "../../components/cards/card-home/CardItemHomePage";
 
 const HomeHighlightHotel = () => {
   return (
