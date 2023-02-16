@@ -1,12 +1,13 @@
 import React from "react";
 import { BgGray } from "../../components/common/backgroud";
 import { Heading } from "../../components/common/heading";
-import CardItemHomePage from "./card/CardItemHomePage";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "./GlobalHome.scss";
+import CardItemHomePage from "../../components/cards/card-home/CardItemHomePage";
 
 const HomeSearchNear = () => {
   return (

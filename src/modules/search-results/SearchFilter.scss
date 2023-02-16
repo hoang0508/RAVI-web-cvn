@@ -1,0 +1,37 @@
+.searchfilter {
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 16px 20px 16px;
+  }
+  &-drop {
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+    &--btnarr {
+      display: flex;
+      align-items: center;
+      gap: 0 8px;
+    }
+    &--btn {
+      display: flex;
+      align-items: center;
+      gap: 0 8px;
+    }
+  }
+  &-bar {
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+    &--icon {
+      width: 28px;
+      height: 28px;
+      background-color: var(--bgGray);
+      border-radius: 100rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

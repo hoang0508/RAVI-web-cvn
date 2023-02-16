@@ -4,9 +4,7 @@ import { Heading } from "../common/heading";
 import TextBanner from "./parts/TextBanner";
 interface IBannerGlobal {
   children?: any;
-  height: string;
   className?: string;
-  borderRadius: string;
   heading: string;
   text: string;
   buttonText: string;
@@ -16,9 +14,7 @@ interface IBannerGlobal {
 
 const BannerGlobal = ({
   children,
-  height,
   className,
-  borderRadius,
   heading,
   text,
   buttonText,
@@ -27,8 +23,6 @@ const BannerGlobal = ({
 }: IBannerGlobal) => {
   const backgroundStyle = {
     backgroundImage: `${gradientBG ? gradientBG : ""} url(${bannerImage}`,
-    height: height,
-    borderRadius: borderRadius,
   };
   return (
     <div className="background" style={backgroundStyle}>

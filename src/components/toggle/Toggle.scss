@@ -1,0 +1,49 @@
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  &-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    color: var(--grayDefaulttMenu);
+  }
+}
+
+.switch {
+  position: relative;
+  cursor: pointer;
+  width: 34px;
+  height: 18px;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #d0d0d0;
+  border-radius: 12px;
+  transition: background-color 0.25s linear;
+}
+
+.switch:after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: #fff;
+  top: 1px;
+  left: 1px;
+  transition: background-color 0.25s linear, transform 0.25s linear;
+}
+
+.switch-input {
+  display: none;
+}
+
+.switch-input:checked + .switch {
+  background-color: var(--primaryColor);
+}
+
+.switch-input:checked + .switch:after {
+  transform: translateX(16px);
+  background-color: white;
+}

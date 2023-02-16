@@ -11,8 +11,6 @@ const HomeFamousHotel = () => {
         gradientBG={`linear-gradient(0deg, rgba(37, 37, 37, 0.2), rgba(37, 37, 37, 0.2)),`}
         bannerImage={BannerImage3}
         className="banner-global"
-        height="642px"
-        borderRadius="8px"
         heading="Những điểm đến cho thuê 
         khách sạn nổi tiếng"
         text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
