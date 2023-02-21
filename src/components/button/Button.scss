@@ -12,6 +12,23 @@
   color: var(--white);
   border-radius: 8px;
   cursor: pointer;
+  &--full {
+    width: 100%;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    color: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+    padding: 15px 0;
+    border-radius: 100rem;
+    &-bg {
+      background-color: var(--primaryColor);
+      color: #fff;
+      border: transparent;
+      text-transform: none;
+    }
+  }
   &--primary {
     padding: 15px 32px;
     border-radius: 100rem;

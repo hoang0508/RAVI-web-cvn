@@ -1,0 +1,61 @@
+.details-vote {
+  &--heading {
+    margin-bottom: 18px;
+    .heading--small {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: calc(20 / 16);
+      color: #252525;
+    }
+  }
+  &--number {
+    display: flex;
+    align-items: center;
+    gap: 0 16px;
+    margin-bottom: 24px;
+    &-quanlity {
+      display: flex;
+      align-items: center;
+      .quanlity {
+        &-rating {
+          display: flex;
+          align-items: center;
+          gap: 0 6px;
+        }
+        &-text {
+          margin-left: 10px;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          color: var(--grayStroke);
+        }
+      }
+    }
+    &-text {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      color: var(--primaryColor);
+    }
+  }
+  &--progress {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  &--cards {
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    &-btn {
+      margin: 20px 0;
+    }
+  }
+}

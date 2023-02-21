@@ -7,16 +7,23 @@ interface IHeading {
   size: string;
 }
 
-const Heading = ({ heading, className = "", size = "small" }: IHeading) => {
-  return (
-    <h2
-      className={`${
-        size === "small" ? "heading--small" : "heading--big"
-      } ${className}`}
-    >
-      {heading}
-    </h2>
-  );
+const Heading = ({ heading, className = "", size = "" }: IHeading) => {
+  let classHeading;
+  switch (size) {
+    case "normal":
+      classHeading = "heading";
+      break;
+    case "small":
+      classHeading = "heading--small";
+      break;
+    case "big":
+      classHeading = "heading--big";
+      break;
+
+    default:
+      break;
+  }
+  return <h2 className={`${classHeading} ${className}`}>{heading}</h2>;
 };
 
 export default Heading;

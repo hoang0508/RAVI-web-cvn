@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import CardInfoRoom from "../../common/cards-components/CardInfoRoom";
 import { IconAcreage, IconBedroom, IconStar } from "../../icons";
 import IconUserv2 from "../../icons/IconUserv2";
 
@@ -10,28 +11,7 @@ const CardContent = () => {
   };
   return (
     <div className="search-item--content" onClick={() => handleNavigate()}>
-      <div className="content-info">
-        <div className="content-info--item">
-          <span>
-            <IconAcreage />
-          </span>
-          <span className="content-info--item-text">
-            102 m<sup>2</sup>
-          </span>
-        </div>
-        <div className="content-info--item">
-          <span>
-            <IconBedroom />
-          </span>
-          <span className="content-info--item-text">2 giường</span>
-        </div>
-        <div className="content-info--item">
-          <span>
-            <IconUserv2 />
-          </span>
-          <span className="content-info--item-text">3 người</span>
-        </div>
-      </div>
+      <CardInfoRoom></CardInfoRoom>
       <h3 className="content-title">
         Cherry Hotel & Apartment Da Nang - Phoenix 2 Hotel
       </h3>
