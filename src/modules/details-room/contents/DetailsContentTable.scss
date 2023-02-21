@@ -1,0 +1,31 @@
+.DetailsOverView-list {
+  &--item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &--item {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+
+    &-text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: calc(18 / 14);
+      color: var(--black100);
+    }
+  }
+}
+
+.column-table {
+  .DetailsTable {
+    display: flex;
+    flex-direction: column;
+    gap: 24px 0;
+    &-main {
+      display: flex;
+      .DetailsOverView-list {
+        width: 25%;
+      }
+    }
+  }
+}

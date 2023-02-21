@@ -12,6 +12,12 @@ interface IButton {
 const Button = ({ type, children, className, kind, onClick }: IButton) => {
   let classBtnKind;
   switch (kind) {
+    case "2xl":
+      classBtnKind = "button--full";
+      break;
+    case "3xl":
+      classBtnKind = "button--full button--full-bg";
+      break;
     case "xl":
       classBtnKind = "button--primary";
       break;

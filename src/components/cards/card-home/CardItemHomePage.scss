@@ -38,52 +38,6 @@
   &-content {
     padding: 16px;
   }
-  &-address {
-    display: inline-block;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: (15/12);
-    color: var(--black100);
-    margin-bottom: 8px;
-  }
-  &-title {
-    max-width: 260px;
-    width: 100%;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: (20/16);
-    color: var(--black100);
-    margin-bottom: 8px;
-  }
-  &-vote {
-    display: flex;
-    align-items: center;
-    gap: 0 10px;
-    margin-bottom: 16px;
-    &--rating {
-      display: flex;
-      align-items: center;
-      gap: 0 5px;
-      .rating-number {
-        font-weight: 700;
-        font-size: 12px;
-        line-height: calc(15 / 12);
-        text-transform: uppercase;
-        color: var(--primaryColor);
-      }
-      .rating-text {
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: calc(15 / 12);
-        color: var(--black100);
-      }
-    }
-  }
   &-price {
     font-weight: 400;
     font-size: 14px;

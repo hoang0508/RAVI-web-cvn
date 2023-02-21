@@ -1,0 +1,33 @@
+.progress-bar {
+  &--title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    &-heading {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      color: var(--black100);
+    }
+    &-number {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      color: var(--black100);
+    }
+  }
+  &--percent {
+    width: 100%;
+    height: 4px;
+    background-color: var(--grayd9);
+    border-radius: 100rem;
+    &-level {
+      display: block;
+      height: 100%;
+      width: 245px;
+      border-radius: 8px;
+      background-color: var(--primaryColor);
+    }
+  }
+}

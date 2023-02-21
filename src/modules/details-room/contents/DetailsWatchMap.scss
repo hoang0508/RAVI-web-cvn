@@ -1,0 +1,18 @@
+.detailsWatch-map {
+  .background {
+    height: 360px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .button--primary {
+      padding: 10px 24px;
+      display: flex;
+      align-items: center;
+      gap: 0 10px;
+      .text-map {
+        text-transform: none;
+      }
+    }
+  }
+}

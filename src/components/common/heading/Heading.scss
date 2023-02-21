@@ -1,9 +1,17 @@
 .heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--black100);
+  margin-bottom: 20px;
   &--small {
+    font-family: "Be Vietnam Pro";
     font-weight: 700;
     font-size: 32px;
     line-height: calc(40 / 32);
     color: var(--black100);
+    margin-bottom: 0;
   }
   &--big {
     font-weight: 700;
