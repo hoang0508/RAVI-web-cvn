@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import { Layout } from "./components/layout";
 import DetailsRoomPage from "./pages/DetailsRoomPage";
 import { HomePage } from "./pages/HomePage";
+import PersonalInfoRoomPage from "./pages/PersonalInfoRoomPage";
 import SearchPage from "./pages/SearchPage";
 
 const App = () => {
@@ -18,6 +19,13 @@ const App = () => {
 
         <Route element={<Layout layout="layout-detail" />}>
           <Route path="/detail-room" element={<DetailsRoomPage />}></Route>
+        </Route>
+
+        <Route element={<Layout layout="layout-headerNav" />}>
+          <Route
+            path="/personal-infoRoom"
+            element={<PersonalInfoRoomPage />}
+          ></Route>
         </Route>
       </Routes>
     </div>

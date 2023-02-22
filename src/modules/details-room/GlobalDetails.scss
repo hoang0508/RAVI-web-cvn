@@ -5,11 +5,11 @@
     gap: 0 20px;
     margin-top: 40px;
   }
-  &--main {
+  &--left {
     max-width: 633px;
     width: 100%;
   }
-  &--pay {
+  &--right {
     max-width: 307px;
     width: 100%;
     height: fit-content;
@@ -25,17 +25,6 @@
     color: var(--black100);
     gap: 0 4px;
   }
-}
-
-// border bottom
-.border-bottom--details {
-  border-bottom: 1px solid var(--grayLight);
-  padding-bottom: 40px;
-}
-
-.border-bottom--pays {
-  border-bottom: 1px solid var(--grayLight);
-  padding-bottom: 16px;
 }
 
 .cancel-payment {

@@ -34,10 +34,25 @@
     border-radius: 100rem;
   }
   &--secondary {
+    font-family: "Be Vietnam Pro";
+    font-style: normal;
     padding: 10px 24px;
     background-color: transparent;
     border-radius: 100rem;
     color: var(--primaryColor);
     border: 1px solid var(--primaryColor);
+    &-bd {
+      padding: 10px 24px;
+      font-family: "Be Vietnam Pro";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 10px;
+      line-height: 13px;
+      text-transform: none;
+      background-color: var(--white);
+      border: 1px solid var(--grayStroke);
+      border-radius: 8px;
+      color: var(--primaryColor);
+    }
   }
 }

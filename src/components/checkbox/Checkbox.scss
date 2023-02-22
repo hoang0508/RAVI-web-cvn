@@ -1,0 +1,38 @@
+.checkbox {
+  &-custom {
+    .ant-checkbox {
+      .ant-checkbox-input {
+        width: 16px;
+        height: 16px;
+        .ant-checkbox-inner {
+          border: 1px solid var(--black100);
+          border-radius: 4px;
+        }
+      }
+    }
+    .label {
+      .label-text {
+        // color: var(--gray98);
+      }
+    }
+    .ant-checkbox-checked {
+      .ant-checkbox-inner {
+        background-color: var(--green80);
+        border-color: transparent;
+        &:hover {
+          background-color: var(--green80);
+          border-color: transparent;
+        }
+      }
+    }
+  }
+  .ant-checkbox-wrapper-checked {
+    span {
+      .label {
+        .label-text {
+          color: var(--black100);
+        }
+      }
+    }
+  }
+}
