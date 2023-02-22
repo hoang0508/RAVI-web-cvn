@@ -27,17 +27,6 @@
   }
 }
 
-// border bottom
-.border-bottom--details {
-  border-bottom: 1px solid var(--grayLight);
-  padding-bottom: 40px;
-}
-
-.border-bottom--pays {
-  border-bottom: 1px solid var(--grayLight);
-  padding-bottom: 16px;
-}
-
 .cancel-payment {
   &--check {
     display: flex;

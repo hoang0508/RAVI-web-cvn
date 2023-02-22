@@ -134,16 +134,14 @@ const CheckoutPays = () => {
           </div>
         </div>
       </div>
-      <div className="border-bottom--pays">
-        <div className="checkoutpays-total">
-          <div className="total-price">
-            <span>Tổng tiền</span>
-            <span>2.653.200 VND</span>
-          </div>
-          <span className="total-info">(cho 2 khách và 6 đêm nghỉ)</span>
+      <div className="checkoutpays-total">
+        <div className="total-price">
+          <span>Tổng tiền</span>
+          <span>2.653.200 VND</span>
         </div>
+        <span className="total-info">(cho 2 khách và 6 đêm nghỉ)</span>
       </div>
-      <div className="checkoutpays-wrapper border-bottom--pays">
+      <div className="checkoutpays-wrapper border-bottom--pays border-top--pays">
         <div className="checkoutpays-choosen">
           <Heading heading="Bạn đã chọn:" size="normal"></Heading>
           <span className="choosen-text">Phòng Giường Đôi Có Ban Công</span>
