@@ -1,4 +1,5 @@
 import React from "react";
+import "./Gap.scss";
 
 interface IGap {
   gap?: string;
@@ -15,6 +16,9 @@ const Gap = ({ gap }: IGap) => {
       break;
     case "g-120":
       classNameGap = "gap-120";
+      break;
+    case "g-16":
+      classNameGap = "gap-16";
       break;
     default:
       classNameGap = "gap-60";

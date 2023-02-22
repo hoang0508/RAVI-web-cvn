@@ -1,0 +1,195 @@
+.checkoutpays {
+  &-wrapper {
+    margin: 16px;
+  }
+  &-image {
+    height: 122px;
+    margin-bottom: 16px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+  &-info {
+    margin-bottom: 9px;
+    .card-info {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      &--item {
+        &-text {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: calc(15 / 12);
+          color: var(--black100);
+        }
+      }
+    }
+  }
+  &-vote {
+    .card-vote {
+      margin-bottom: 12px;
+    }
+  }
+  &-address {
+    margin-bottom: 0;
+  }
+  &-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .menu-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px 0;
+      &--item {
+        display: flex;
+        align-items: center;
+        gap: 0 8px;
+        &-icon {
+          width: 16px;
+          height: 16px;
+        }
+        &-text {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: calc(15 / 12);
+          color: var(--black100);
+        }
+      }
+    }
+  }
+  &-date {
+    .date-period {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      &--col {
+        display: flex;
+        flex-direction: column;
+        gap: 6px 0;
+        margin-bottom: 16px;
+        &:nth-child(2) {
+          border-left: 1px solid var(--grayLight);
+          padding-left: 16px;
+        }
+        .date-col {
+          &--room {
+            display: inline-block;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: calc(18 / 14);
+            color: var(--black100);
+          }
+          &--time {
+            max-width: 106px;
+            width: 100%;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: calc(20 / 14);
+            color: var(--black100);
+          }
+          &--to {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: calc(15 / 12);
+            color: var(--grayDefaulttMenu);
+          }
+        }
+      }
+    }
+    .date-live {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: calc(18 / 14);
+      color: var(--black100);
+      &--number {
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: calc(17 / 14);
+        color: var(--grayDefaulttMenu);
+      }
+    }
+  }
+  &-people {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    color: var(--black100);
+  }
+  &-expense {
+    .expense-list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: calc(15 / 12);
+      color: var(--black100);
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+  &-total {
+    padding: 16px;
+    background-color: var(--grayLight);
+    .total-price {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: calc(20 / 14);
+      color: var(--black100);
+      margin-bottom: 2px;
+    }
+    .total-info {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: calc(15 / 12);
+      color: var(--grayDefaulttMenu);
+    }
+  }
+  &-choosen {
+    .heading {
+      margin-bottom: 12px;
+    }
+    .choosen-text {
+      display: block;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: calc(15 / 12);
+      color: var(--black100);
+      margin-bottom: 17px;
+    }
+    .choosen-select {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 10px;
+      line-height: calc(17 / 10);
+      color: var(--primaryColor);
+    }
+  }
+  &-pressure {
+    padding: 0 16px 16px;
+    .input-comp {
+      margin-bottom: 8px;
+      input {
+        padding: 9px 0 9px 12px;
+      }
+    }
+  }
+}

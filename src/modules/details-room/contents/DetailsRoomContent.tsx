@@ -13,7 +13,7 @@ import DetailsVoteRatings from "./DetailsVoteRatings";
 import DetailsWatchMap from "./DetailsWatchMap";
 const DetailsRoomContent = () => {
   return (
-    <div className="details-room--main">
+    <div className="details-room--left">
       <DetailsThumb />
       <DetailsNav />
       <DetailsContentTable />

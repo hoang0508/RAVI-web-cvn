@@ -2,7 +2,9 @@ import IconAcreage from "./IconAcreage";
 import IconAirConditioner from "./IconAirConditioner";
 import IconArrow from "./IconArrow";
 import IconArrowRight from "./IconArrowRight";
+import IconBack from "./IconBack";
 import IconBedroom from "./IconBedroom";
+import IconCheck from "./IconCheck";
 import IconChecked from "./IconChecked";
 import IconClendar from "./IconClendar";
 import IconClock from "./IconClock";
@@ -32,6 +34,7 @@ import IconStarV2 from "./IconStarV2";
 import IconUmbrella from "./IconUmbrella";
 import IconUser from "./IconUser";
 import IconUserReceptionist from "./IconUserReceptionist";
+import IconUserRoom from "./IconUserRoom";
 import IconWalk from "./IconWalk";
 import IconWifi from "./IconWifi";
 import IconYouTube from "./IconYouTube";
@@ -74,4 +77,7 @@ export {
   IconDining,
   IconAirConditioner,
   IconPool,
+  IconBack,
+  IconUserRoom,
+  IconCheck,
 };

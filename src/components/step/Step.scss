@@ -1,0 +1,139 @@
+.step {
+  .step-custom {
+    .ant-steps-item-finish {
+      .ant-steps-item-container {
+        display: flex;
+        align-items: center;
+        gap: 0 12px;
+      }
+      .ant-steps-item-icon {
+        width: 24px;
+        height: 24px;
+        border: 1px solid var(--green80);
+        border-radius: 100rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .ant-steps-icon {
+          font-family: "Be Vietnam Pro";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 11px;
+          line-height: calc(14 / 11);
+          width: 18px;
+          height: 18px;
+          padding: 2px;
+          background-color: var(--green80);
+          color: #fff;
+          border-radius: 100rem;
+        }
+      }
+      .ant-steps-item-content {
+        .ant-steps-item-title {
+          font-family: "Be Vietnam Pro";
+          font-style: normal;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: calc(18 / 14);
+          color: var(--green80);
+          &::after {
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: var(--green80);
+          }
+        }
+      }
+    }
+    .ant-steps-item-process {
+      .ant-steps-item-container {
+        display: flex;
+        align-items: center;
+        gap: 0 12px;
+      }
+      .ant-steps-item-icon {
+        width: 24px;
+        height: 24px;
+        border: 1px solid var(--green80);
+        border-radius: 100rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        .ant-steps-icon {
+          font-family: "Be Vietnam Pro";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 11px;
+          line-height: calc(14 / 11);
+          width: 18px;
+          height: 18px;
+          padding: 2px;
+          background-color: var(--green80);
+          color: #fff;
+          border-radius: 100rem;
+        }
+      }
+      .ant-steps-item-content {
+        .ant-steps-item-title {
+          font-family: "Be Vietnam Pro";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: calc(18 / 14);
+          color: var(--green80);
+          &::after {
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: var(--green80);
+          }
+        }
+      }
+    }
+    .ant-steps-item-wait {
+      .ant-steps-item-container {
+        display: flex;
+        align-items: center;
+        gap: 0 12px;
+      }
+      .ant-steps-item-icon {
+        width: 24px;
+        height: 24px;
+        border: 1px solid var(--grayStroke);
+        border-radius: 100rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        .ant-steps-icon {
+          font-family: "Be Vietnam Pro";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 11px;
+          line-height: calc(14 / 11);
+          width: 18px;
+          height: 18px;
+          padding: 2px;
+          background-color: var(--grayStroke);
+          color: #fff;
+          border-radius: 100rem;
+        }
+      }
+      .ant-steps-item-content {
+        .ant-steps-item-title {
+          font-family: "Be Vietnam Pro";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: calc(18 / 14);
+          color: var(--grayStroke);
+          &::after {
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: var(--grayStroke);
+          }
+        }
+      }
+    }
+  }
+}

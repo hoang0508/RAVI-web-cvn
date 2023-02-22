@@ -1,0 +1,26 @@
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 0 16px;
+  .radio-comp {
+    .ant-radio-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0 8px;
+      .ant-radio {
+        width: 18px;
+        height: 18px;
+        .ant-radio-inner {
+          border: 1px solid var(--black100);
+          border-radius: 100rem;
+        }
+      }
+      .ant-radio-checked {
+        .ant-radio-inner {
+          background-color: var(--green80);
+          border-color: transparent;
+        }
+      }
+    }
+  }
+}
