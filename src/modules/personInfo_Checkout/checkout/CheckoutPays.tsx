@@ -18,7 +18,11 @@ import { InputComp } from "../../../components/input";
 import DefaultImage from "../../../constants/global";
 import "./CheckoutPays.scss";
 
-const CheckoutPays = () => {
+interface ICheckoutPays {
+  currentStep: number;
+}
+
+const CheckoutPays = ({ currentStep }: ICheckoutPays) => {
   return (
     <>
       <div className="checkoutpays">
@@ -141,27 +145,31 @@ const CheckoutPays = () => {
         </div>
         <span className="total-info">(cho 2 khách và 6 đêm nghỉ)</span>
       </div>
-      <div className="checkoutpays-wrapper border-bottom--pays border-top--pays">
-        <div className="checkoutpays-choosen">
-          <Heading heading="Bạn đã chọn:" size="normal"></Heading>
-          <span className="choosen-text">Phòng Giường Đôi Có Ban Công</span>
-          <span className="choosen-select">ĐỔI LỰA CHỌN CỦA BẠN</span>
-        </div>
-      </div>
-      <div className="checkoutpays-pressure">
-        <Heading
-          heading="Có Thể Dùng Cho Đặt Phòng Này"
-          size="normal"
-        ></Heading>
-        <InputComp
-          name=""
-          type="text"
-          placeholder="Nhập mã giảm giá (nếu có)"
-        ></InputComp>
-        <Button type="button" kind="2sm">
-          Áp dụng mã
-        </Button>
-      </div>
+      {currentStep === 1 && (
+        <>
+          <div className="checkoutpays-wrapper border-bottom--pays border-top--pays">
+            <div className="checkoutpays-choosen">
+              <Heading heading="Bạn đã chọn:" size="normal"></Heading>
+              <span className="choosen-text">Phòng Giường Đôi Có Ban Công</span>
+              <span className="choosen-select">ĐỔI LỰA CHỌN CỦA BẠN</span>
+            </div>
+          </div>
+          <div className="checkoutpays-pressure">
+            <Heading
+              heading="Có Thể Dùng Cho Đặt Phòng Này"
+              size="normal"
+            ></Heading>
+            <InputComp
+              name=""
+              type="text"
+              placeholder="Nhập mã giảm giá (nếu có)"
+            ></InputComp>
+            <Button type="button" kind="2sm">
+              Áp dụng mã
+            </Button>
+          </div>
+        </>
+      )}
     </>
   );
 };

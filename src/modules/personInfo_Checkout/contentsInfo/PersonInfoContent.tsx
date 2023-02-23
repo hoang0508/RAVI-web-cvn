@@ -9,7 +9,19 @@ import { SelectComp } from "../../../components/select";
 import "./PersonInfoContent.scss";
 import PersonInfoForm from "./PersonInfoForm";
 
-const PersonInfoContent = () => {
+interface IPersonInfoContent {
+  setCurrentStep: any;
+  currentStep: number;
+}
+
+const PersonInfoContent = ({
+  setCurrentStep,
+  currentStep,
+}: IPersonInfoContent) => {
+  const handleNextStepCheckout = () => {
+    window.scrollTo(0, 0);
+    setCurrentStep(currentStep + 1);
+  };
   return (
     <div className="personinfo-content">
       <PersonInfoForm />
@@ -75,7 +87,11 @@ const PersonInfoContent = () => {
       </div>
       <Gap gap="g-40" />
       <div className="border-bottom--custom">
-        <Button type="button" kind="3xl">
+        <Button
+          type="button"
+          kind="3xl"
+          onClick={() => handleNextStepCheckout()}
+        >
           Chi tiết thanh toán
         </Button>
       </div>

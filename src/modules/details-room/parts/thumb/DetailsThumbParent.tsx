@@ -6,7 +6,6 @@ interface IDetailsThumbParent {
 }
 
 const DetailsThumbParent = ({ imageThumb }: IDetailsThumbParent) => {
-  console.log(imageThumb);
   return (
     <div className="details-thumb">
       <div className="details-thumb--image">
