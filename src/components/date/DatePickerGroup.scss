@@ -1,0 +1,14 @@
+.datepicker-group {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+  .datepicker-custom {
+    height: 50px;
+    &:hover {
+      border-color: var(--primaryColor);
+    }
+  }
+  .ant-picker-focused {
+    box-shadow: none;
+  }
+}

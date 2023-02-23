@@ -14,3 +14,8 @@
     border: 1px solid var(--grayLight);
   }
 }
+
+.disable-checkout {
+  pointer-events: none;
+  opacity: 0.5;
+}
