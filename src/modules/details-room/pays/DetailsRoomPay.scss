@@ -10,8 +10,9 @@
       gap: 0 12px;
       background: var(--grayLight);
       border-radius: 8px;
-      padding: 4px 0 4px 4px;
+      padding: 4px 8px 4px 4px;
       margin-bottom: 17px;
+      max-width: max-content;
       .discount-sale {
         padding: 5px 6px;
         font-weight: 700;
@@ -41,7 +42,6 @@
           font-weight: 700;
           font-size: 14px;
           line-height: calc(18 / 14);
-          text-transform: uppercase;
           color: var(--black100);
         }
       }
@@ -199,6 +199,9 @@
     }
     &-book {
       padding: 16px;
+      .button--primary {
+        width: 100%;
+      }
     }
   }
 }

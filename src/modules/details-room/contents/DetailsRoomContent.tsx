@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Button } from "../../../components/button";
 import { Gap } from "../../../components/common/gap";
 import { Heading } from "../../../components/common/heading";
@@ -11,14 +11,32 @@ import DetailsExpenseRoom from "./DetailsExpenseRoom";
 import DetailsSupport from "./DetailsSupport";
 import DetailsVoteRatings from "./DetailsVoteRatings";
 import DetailsWatchMap from "./DetailsWatchMap";
+
 const DetailsRoomContent = () => {
+  const utilitiesHotel = useRef(null);
+  const infoHotel = useRef(null);
+  const ruleHotel = useRef(null);
+  const voteHotel = useRef(null);
+
+  const scrollToSection = (elementRef: any) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop - 30,
+      behavior: "smooth",
+    });
+  };
+  const idTableDetails = { utilitiesHotel, infoHotel, ruleHotel, voteHotel };
   return (
     <div className="details-room--left">
       <DetailsThumb />
-      <DetailsNav />
-      <DetailsContentTable />
+      <DetailsNav
+        scrollToSection={scrollToSection}
+        idTableDetails={idTableDetails}
+      />
+      <DetailsContentTable idTableDetails={idTableDetails} />
       <Gap gap="g-40" />
-      <DetailsVoteRatings />
+      <div ref={voteHotel}>
+        <DetailsVoteRatings />
+      </div>
       <Gap gap="g-40" />
       <DetailsWatchMap />
       <Gap gap="g-40" />
@@ -42,7 +60,7 @@ const DetailsRoomContent = () => {
       </div>
       <Gap gap="g-40" />
       <div className="border-bottom--details details-book--now">
-        <Button type="button" kind="3xl">
+        <Button type="button" kind="xl">
           Đặt ngay
         </Button>
         <span className="details-book--now-text">Bạn sẽ không bị tính phí</span>

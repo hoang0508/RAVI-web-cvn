@@ -19,7 +19,7 @@ const CardDestination = ({}: ICardDestination) => {
           veniam consequat sunt nostrud amet.
         </p>
         <Button type="button" kind="sm">
-          tìm kiếm ngay
+          Tìm kiếm ngay
         </Button>
       </div>
     </div>

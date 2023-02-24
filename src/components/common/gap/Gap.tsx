@@ -20,6 +20,9 @@ const Gap = ({ gap }: IGap) => {
     case "g-16":
       classNameGap = "gap-16";
       break;
+    case "g-32":
+      classNameGap = "gap-32";
+      break;
     default:
       classNameGap = "gap-60";
       break;

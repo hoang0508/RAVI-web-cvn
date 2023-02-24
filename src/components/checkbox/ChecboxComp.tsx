@@ -7,15 +7,22 @@ interface IChecboxComp {
   value: string;
   text: string;
   colorGray?: string;
+  children?: React.ReactNode;
 }
 
-const ChecboxComp = ({ value, text, colorGray = "" }: IChecboxComp) => {
+const ChecboxComp = ({
+  value,
+  text,
+  colorGray = "",
+  children,
+}: IChecboxComp) => {
   return (
     <>
       <Checkbox value={value} className="checkbox-custom">
         <Label labelMark={false} colorLabel={colorGray}>
           {text}
         </Label>
+        {children}
       </Checkbox>
     </>
   );

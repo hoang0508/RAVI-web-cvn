@@ -49,6 +49,9 @@
 }
 
 .details-book--now {
+  .button--primary {
+    width: 100%;
+  }
   &-text {
     display: block;
     text-align: center;

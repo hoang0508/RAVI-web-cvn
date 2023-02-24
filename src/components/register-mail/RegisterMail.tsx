@@ -23,7 +23,7 @@ const RegisterMail = () => {
             className="input-email"
           />
           <Button className="btn-email" kind="xl" type="button">
-            đăng ký
+            Đăng ký
           </Button>
         </div>
         <p className="form-desc">

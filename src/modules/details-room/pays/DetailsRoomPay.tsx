@@ -29,8 +29,8 @@ const DetailsRoomPay = () => {
           <div className="details-room--pay-discount">
             <span className="discount-sale">-17%</span>
             <div className="discount-price">
-              <span className="discount-price--old">1.876.741 VND</span>
-              <span className="discount-price--new">1.540.741 VND</span>
+              <span className="discount-price--old">1.876.741đ</span>
+              <span className="discount-price--new">1.540.741đ</span>
             </div>
           </div>
           <div className="details-room--pay-info">
@@ -140,11 +140,7 @@ const DetailsRoomPay = () => {
           <span className="total-info">(cho 2 khách và 6 đêm nghỉ)</span>
         </div>
         <div className="details-room--pay-book">
-          <Button
-            kind="3xl"
-            type="button"
-            onClick={() => handleClickNavigate()}
-          >
+          <Button kind="xl" type="button" onClick={() => handleClickNavigate()}>
             Đặt ngay
           </Button>
         </div>

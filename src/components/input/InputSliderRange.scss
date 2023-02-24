@@ -1,0 +1,48 @@
+.input-range {
+  .ant-slider {
+    .ant-slider-rail {
+      height: 2px;
+      background-color: var(--gray98);
+      border-radius: 2px;
+    }
+    .ant-slider-track {
+      background-color: var(--gray98);
+      height: 2px;
+    }
+    .ant-slider-handle {
+      &:hover::before {
+        width: 12px;
+        height: 12px;
+      }
+      &::before {
+        width: 12px;
+        height: 12px;
+        inset-inline-start: 0;
+        inset-block-start: 0;
+      }
+      &::after {
+        width: 12px;
+        height: 12px;
+        background: var(--white);
+        border: 2px solid var(--gray98);
+        box-shadow: none;
+      }
+    }
+    .ant-slider-handle:focus::before {
+      width: 12px;
+      height: 12px;
+      inset-inline-start: 0;
+      inset-block-start: 0;
+    }
+  }
+}
+
+:where(.css-dev-only-do-not-override-diro6f).ant-slider
+  .ant-slider-handle:hover::before,
+:where(.css-dev-only-do-not-override-diro6f).ant-slider
+  .ant-slider-handle:active::before,
+:where(.css-dev-only-do-not-override-diro6f).ant-slider
+  .ant-slider-handle:focus::before {
+  inset-inline-start: 0;
+  inset-block-start: 0;
+}
