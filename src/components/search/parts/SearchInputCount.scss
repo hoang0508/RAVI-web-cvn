@@ -1,0 +1,35 @@
+.search-input--count {
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+  &-number {
+    font-family: "Be Vietnam Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    color: var(--black100);
+  }
+  &-decrease {
+    background-color: transparent;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primaryColor);
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  &-increase {
+    background-color: transparent;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primaryColor);
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}

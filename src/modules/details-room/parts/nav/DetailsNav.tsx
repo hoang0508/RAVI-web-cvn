@@ -2,13 +2,28 @@ import React from "react";
 import ButtonNav from "./ButtonNav";
 import "./DetailsNav.scss";
 
-const DetailsNav = () => {
+interface IDetailsNav {
+  scrollToSection: any;
+  idTableDetails: any;
+}
+
+const DetailsNav = ({ scrollToSection, idTableDetails }: IDetailsNav) => {
   return (
     <div className="details-nav">
-      <ButtonNav className="">Tiện ích</ButtonNav>
-      <ButtonNav className="">Thông tin khách sạn</ButtonNav>
-      <ButtonNav className="">Quy tắc chung</ButtonNav>
-      <ButtonNav className="">Xếp hạng và đánh giá</ButtonNav>
+      <ButtonNav
+        onClick={() => scrollToSection(idTableDetails?.utilitiesHotel)}
+      >
+        Tiện ích
+      </ButtonNav>
+      <ButtonNav onClick={() => scrollToSection(idTableDetails?.infoHotel)}>
+        Thông tin khách sạn
+      </ButtonNav>
+      <ButtonNav onClick={() => scrollToSection(idTableDetails?.ruleHotel)}>
+        Quy tắc chung
+      </ButtonNav>
+      <ButtonNav onClick={() => scrollToSection(idTableDetails?.voteHotel)}>
+        Xếp hạng và đánh giá
+      </ButtonNav>
     </div>
   );
 };

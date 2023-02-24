@@ -86,10 +86,10 @@ const PersonInfoContent = ({
         </div>
       </div>
       <Gap gap="g-40" />
-      <div className="border-bottom--custom">
+      <div className="border-bottom--custom button-details--checkout">
         <Button
           type="button"
-          kind="3xl"
+          kind="xl"
           onClick={() => handleNextStepCheckout()}
         >
           Chi tiết thanh toán

@@ -19,12 +19,12 @@ const Footer = () => {
               </li>
               <li>
                 <Link to={"/"} className="col--link">
-                  Khách sạn ở Việt Nam
+                  Tất cả các loại chỗ ở
                 </Link>
               </li>
               <li>
                 <Link to={"/"} className="col--link">
-                  Khách sạn ở Việt Nam
+                  Cẩm nang du lịch
                 </Link>
               </li>
             </ul>
@@ -34,17 +34,17 @@ const Footer = () => {
             <ul className="col--item">
               <li>
                 <Link to={"/"} className="col--link">
-                  Khách sạn ở Việt Nam
+                  Về chúng tôi
                 </Link>
               </li>
               <li>
                 <Link to={"/"} className="col--link">
-                  Khách sạn ở Việt Nam
+                  Vì sao nên chọn Ravi.com?
                 </Link>
               </li>
               <li>
                 <Link to={"/"} className="col--link">
-                  Khách sạn ở Việt Nam
+                  Tuyển dụng
                 </Link>
               </li>
             </ul>
@@ -54,17 +54,17 @@ const Footer = () => {
             <ul className="col--item">
               <li>
                 <Link to={"/"} className="col--link">
-                  Khách sạn ở Việt Nam
+                  Chính sách bảo mật
                 </Link>
               </li>
               <li>
                 <Link to={"/"} className="col--link">
-                  Khách sạn ở Việt Nam
+                  Chính sách về Cookie
                 </Link>
               </li>
               <li>
                 <Link to={"/"} className="col--link">
-                  Khách sạn ở Việt Nam
+                  Điều khoản sử dụng
                 </Link>
               </li>
             </ul>
@@ -74,17 +74,7 @@ const Footer = () => {
             <ul className="col--item">
               <li>
                 <Link to={"/"} className="col--link">
-                  Khách sạn ở Việt Nam
-                </Link>
-              </li>
-              <li>
-                <Link to={"/"} className="col--link">
-                  Khách sạn ở Việt Nam
-                </Link>
-              </li>
-              <li>
-                <Link to={"/"} className="col--link">
-                  Khách sạn ở Việt Nam
+                  Câu hỏi thường gặp
                 </Link>
               </li>
             </ul>

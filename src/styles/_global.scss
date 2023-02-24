@@ -80,3 +80,38 @@
   padding-top: 16px;
   border-top: 1px solid var(--grayLight);
 }
+
+// border modal filter
+.border-bottom--filter {
+  border-bottom: 1px solid var(--grayLight);
+  padding-bottom: 32px;
+}
+
+// close show dropdown
+.close-show-dropdown {
+  border-top: 1px solid var(--gray98);
+  display: block;
+  padding: 14px 24px 21px 0;
+  text-align: right;
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: calc(13 / 10);
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+
+.icon-arrow--translate {
+  svg {
+    transition: all 0.25s linear;
+    transform: rotate(180deg);
+  }
+}
+
+.icon-arrow {
+  svg {
+    transition: all 0.25s linear;
+    transform: rotate(0deg);
+  }
+}

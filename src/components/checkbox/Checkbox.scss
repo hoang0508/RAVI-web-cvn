@@ -4,10 +4,10 @@
       .ant-checkbox-input {
         width: 16px;
         height: 16px;
-        .ant-checkbox-inner {
-          border: 1px solid var(--black100);
-          border-radius: 4px;
-        }
+      }
+      .ant-checkbox-inner {
+        border: 1px solid var(--black100);
+        border-radius: 4px;
       }
     }
     .label {
@@ -35,4 +35,15 @@
       }
     }
   }
+}
+
+:where(.css-dev-only-do-not-override-diro6f).ant-checkbox-wrapper:not(
+    .ant-checkbox-wrapper-disabled
+  ):hover
+  .ant-checkbox-inner,
+:where(.css-dev-only-do-not-override-diro6f).ant-checkbox:not(
+    .ant-checkbox-disabled
+  ):hover
+  .ant-checkbox-inner {
+  border-color: var(--black100);
 }

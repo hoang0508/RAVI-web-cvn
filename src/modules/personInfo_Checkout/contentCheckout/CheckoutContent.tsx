@@ -147,7 +147,7 @@ const CheckoutContent = () => {
       </div>
       <Gap gap="g-40" />
       <div className="checkout-content--comple">
-        <Button type="button" kind="3xl">
+        <Button type="button" kind="xl">
           Hoàn tất thanh toán
         </Button>
       </div>

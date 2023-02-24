@@ -15,7 +15,11 @@ import IconBedRoomV2 from "../../../components/icons/IconBedRoomV2";
 import DetailsTable from "../parts/table/DetailsTable";
 import "./DetailsContentTable.scss";
 
-const DetailsContentTable = () => {
+interface IDetailsContentTable {
+  idTableDetails: any;
+}
+
+const DetailsContentTable = ({ idTableDetails }: IDetailsContentTable) => {
   return (
     <>
       <DetailsTable heading="Tổng quan">
@@ -63,7 +67,7 @@ const DetailsContentTable = () => {
         </div>
       </DetailsTable>
       <Gap gap="g-40" />
-      <div className="column-table">
+      <div className="column-table" ref={idTableDetails?.utilitiesHotel}>
         <DetailsTable heading="Tiện nghi phổ biến nhất" headingInline="inline">
           <div className="DetailsOverView-list">
             <div className="DetailsOverView-list--item">
@@ -151,7 +155,7 @@ const DetailsContentTable = () => {
         </div>
       </DetailsTable>
       <Gap gap="g-40" />
-      <DetailsTable heading="Mô tả khách sạn" grid="full">
+      <DetailsTable heading="Mô tả khách sạn" grid="full" headingInline="block">
         <Text>
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation
@@ -162,42 +166,54 @@ const DetailsContentTable = () => {
         </Text>
       </DetailsTable>
       <Gap gap="g-40" />
-      <DetailsTable heading="Thời gian nhận phòng" grid="full">
-        <div className="DetailsOverView-list">
-          <div className="DetailsOverView-list--item">
-            <span>
-              <IconClock />
-            </span>
-            <span className="DetailsOverView-list--item-text">
-              Từ 12:00 - 00:00 giờ chiều
-            </span>
+      <div ref={idTableDetails?.infoHotel}>
+        <DetailsTable
+          heading="Thời gian nhận phòng"
+          grid="full"
+          headingInline="block"
+        >
+          <div className="DetailsOverView-list">
+            <div className="DetailsOverView-list--item">
+              <span>
+                <IconClock />
+              </span>
+              <span className="DetailsOverView-list--item-text">
+                Từ 12:00 - 00:00 giờ chiều
+              </span>
+            </div>
           </div>
-        </div>
-      </DetailsTable>
-      <Gap gap="g-40" />
-      <DetailsTable heading="Thời gian trả phòng" grid="full">
-        <div className="DetailsOverView-list">
-          <div className="DetailsOverView-list--item">
-            <span>
-              <IconClock />
-            </span>
-            <span className="DetailsOverView-list--item-text">
-              Đến 11:00 - 13:00 giờ sáng
-            </span>
+        </DetailsTable>
+        <Gap gap="g-40" />
+        <DetailsTable
+          heading="Thời gian trả phòng"
+          grid="full"
+          headingInline="block"
+        >
+          <div className="DetailsOverView-list">
+            <div className="DetailsOverView-list--item">
+              <span>
+                <IconClock />
+              </span>
+              <span className="DetailsOverView-list--item-text">
+                Đến 11:00 - 13:00 giờ sáng
+              </span>
+            </div>
           </div>
-        </div>
-      </DetailsTable>
-      <Gap gap="g-40" />
-      <DetailsTable heading="Thời gian trả phòng" grid="full">
-        <Text>
-          Phù hợp cho tất cả trẻ em. Trẻ em từ 12 tuổi trở lên được tính như
-          người lớn tại chỗ nghỉ này. Để xem thông tin giá và tình trạng phòng
-          trống chính xác, vui lòng thêm số lượng và độ tuổi của trẻ em trong
-          nhóm của bạn khi tìm kiếm. Không có yêu cầu về độ tuổi khi nhận phòng
-          Vật nuôi không được phép. Hút thuốc không được cho phép.
-        </Text>
-      </DetailsTable>
-      <Gap gap="g-40" />
+        </DetailsTable>
+        <Gap gap="g-40" />
+      </div>
+      <div ref={idTableDetails?.ruleHotel}>
+        <DetailsTable heading="Quy tắc chung" grid="full" headingInline="block">
+          <Text>
+            Phù hợp cho tất cả trẻ em. Trẻ em từ 12 tuổi trở lên được tính như
+            người lớn tại chỗ nghỉ này. Để xem thông tin giá và tình trạng phòng
+            trống chính xác, vui lòng thêm số lượng và độ tuổi của trẻ em trong
+            nhóm của bạn khi tìm kiếm. Không có yêu cầu về độ tuổi khi nhận
+            phòng Vật nuôi không được phép. Hút thuốc không được cho phép.
+          </Text>
+        </DetailsTable>
+        <Gap gap="g-40" />
+      </div>
       <DetailsTable heading="Ghi chú" grid="full">
         <Text>
           Xin vui lòng liên hệ trực tiếp với khách sạn để biết thêm thông tin về

@@ -1,9 +1,13 @@
 import IconAcreage from "./IconAcreage";
 import IconAirConditioner from "./IconAirConditioner";
 import IconArrow from "./IconArrow";
+import IconArrowLeft from "./IconArrowLeft";
 import IconArrowRight from "./IconArrowRight";
+import IconArrowRightV2 from "./IconArrowRightV2";
+import IconArrowV2 from "./IconArrowV2";
 import IconBack from "./IconBack";
 import IconBedroom from "./IconBedroom";
+import IconCar from "./IconCar";
 import IconCheck from "./IconCheck";
 import IconChecked from "./IconChecked";
 import IconClendar from "./IconClendar";
@@ -23,8 +27,10 @@ import IconLineV2 from "./IconLineV2";
 import IconLineV3 from "./IconLineV3";
 import IconLocation from "./IconLocation";
 import IconMapsV2 from "./IconMapsV2";
+import IconMinus from "./IconMinus";
 import IconOverView from "./IconOverView";
 import IconParlking from "./IconParlking";
+import IconPlus from "./IconPlus";
 import IconPool from "./IconPool";
 import IconSearchUser from "./IconSearchUser";
 import IconShare from "./IconShare";
@@ -80,4 +86,10 @@ export {
   IconBack,
   IconUserRoom,
   IconCheck,
+  IconArrowLeft,
+  IconArrowRightV2,
+  IconArrowV2,
+  IconCar,
+  IconMinus,
+  IconPlus,
 };
