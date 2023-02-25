@@ -18,11 +18,13 @@ import IconEmail from "./IconEmail";
 import IconFacebook from "./IconFacebook";
 import IconFacebookV2 from "./IconFacebookV2";
 import IconFeeling from "./IconFeeling";
+import Icongift from "./Icongift";
 import IconGoogle from "./IconGoogle";
 import IconHeart from "./IconHeart";
 import IconHeartV2 from "./IconHeartV2";
 import IconHeartV3 from "./IconHeartV3";
 import IconHelp from "./IconHelp";
+import IconHistorybook from "./IconHistorybook";
 import IconHotel from "./IconHotel";
 import IconIntagram from "./IconIntagram";
 import IconLine from "./IconLine";
@@ -98,4 +100,6 @@ export {
   IconFacebookV2,
   IconGoogle,
   IconEmail,
+  IconHistorybook,
+  Icongift,
 };

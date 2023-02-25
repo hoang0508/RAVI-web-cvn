@@ -9,9 +9,16 @@ import HeaderNavMenu from "./header/HeaderNavMenu";
 interface ILayout {
   layout: string;
   footerHidden?: boolean;
+  backTo?: string;
+  textTo?: string;
 }
 
-const Layout = ({ layout, footerHidden }: ILayout) => {
+const Layout = ({
+  layout,
+  footerHidden,
+  backTo = "",
+  textTo = "",
+}: ILayout) => {
   let header;
   switch (layout) {
     case "layout-home":
@@ -24,7 +31,7 @@ const Layout = ({ layout, footerHidden }: ILayout) => {
       header = <HeaderDetails />;
       break;
     case "layout-headerNav":
-      header = <HeaderNavMenu />;
+      header = <HeaderNavMenu backTo={backTo} textTo={textTo} />;
       break;
     default:
       break;

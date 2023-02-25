@@ -1,0 +1,13 @@
+.acount-info {
+  &--note {
+    display: inline-block;
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    color: var(--gray98);
+  }
+  &--form {
+    margin-bottom: 120px;
+  }
+}

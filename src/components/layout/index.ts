@@ -1,3 +1,4 @@
 import Layout from "./Layout";
+import LayoutAccount from "./LayoutAccount";
 
-export { Layout };
+export { Layout, LayoutAccount };
