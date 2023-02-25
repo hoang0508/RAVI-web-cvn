@@ -2,17 +2,37 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { IconBack, IconHeart, IconHelp, IconUser } from "../../icons";
 import Logo from "../../../assets/images/logo.png";
-import "./HeaderNavMenu.scss";
 
-const HeaderNavMenu = () => {
+interface IHeaderNavMenu {
+  backTo: string;
+  textTo: string;
+}
+
+const HeaderNavMenu = ({ backTo, textTo }: IHeaderNavMenu) => {
+  let linkTo: any;
+  switch (backTo) {
+    case "back-search":
+      linkTo = "/";
+      break;
+    case "back-home":
+      linkTo = "/";
+      break;
+    case "back-details-room":
+      linkTo = "/detail-room";
+      break;
+
+    default:
+      break;
+  }
+  console.log(linkTo);
   return (
     <div className="d-flex-cb header-nav--menu">
-      <div className="header-nav--back">
+      <Link to={linkTo} className="header-nav--back">
         <span>
           <IconBack />
         </span>
-        <span>Thông tin của bạn</span>
-      </div>
+        <span>{textTo}</span>
+      </Link>
 
       <Link className="" to={"/"}>
         <div>

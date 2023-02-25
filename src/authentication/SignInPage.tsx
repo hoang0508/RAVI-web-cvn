@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import bgSignIn from "../assets/images/bg-signup.png";
 import { Button } from "../components/button";
 import { Gap } from "../components/common/gap";
@@ -14,6 +15,10 @@ const SignInPage = () => {
   const backgroundStyle = {
     backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
     url(${bgSignIn}`,
+  };
+  const navigate = useNavigate();
+  const handleSingIn = () => {
+    navigate("/account-info");
   };
   return (
     <div className="background signin" style={backgroundStyle}>
@@ -32,7 +37,12 @@ const SignInPage = () => {
               placeholder="Vui lòng nhập số điện thoại"
               type="tel"
             />
-            <Button type="submit" kind="xl" className="signin-form--submit">
+            <Button
+              type="submit"
+              kind="xl"
+              className="signin-form--submit"
+              onClick={() => handleSingIn()}
+            >
               Tiếp tục
             </Button>
           </form>

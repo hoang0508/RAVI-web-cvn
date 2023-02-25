@@ -4,11 +4,11 @@
     border: 1px solid var(--grayLight);
     background-color: var(--white);
     border-radius: 8px;
-    font-family: "Montserrat";
+    font-family: "Be Vietnam Pro";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 14px;
-    line-height: calc(17 / 14);
+    line-height: calc(18 / 14);
     color: var(--black100);
     &:hover {
       border-color: var(--grayStroke);
@@ -23,11 +23,11 @@
       box-shadow: none;
     }
     &::placeholder {
-      font-family: "Montserrat";
+      font-family: "Be Vietnam Pro";
       font-style: normal;
-      font-weight: 400;
+      font-weight: 300;
       font-size: 14px;
-      line-height: calc(17 / 14);
+      line-height: calc(18 / 14);
       color: var(--gray98);
     }
   }
