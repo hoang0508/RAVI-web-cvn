@@ -1,0 +1,24 @@
+.signin-social {
+  background: var(--white);
+  border: 1px solid var(--gray98);
+  border-radius: 8px;
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 8px;
+  cursor: pointer;
+  // margin-bottom: 10px;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  &--text {
+    font-family: "Be Vietnam Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    color: var(--black100);
+  }
+}

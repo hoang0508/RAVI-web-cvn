@@ -266,18 +266,24 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px 12px 10px 16px;
-        &--location {
-          display: flex;
-          align-items: center;
-          gap: 0 8px;
-          .select-item--text {
-            font-family: "Be Vietnam Pro";
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: calc(18 / 14);
-            color: var(--black100);
-          }
+        position: relative;
+        &::before {
+          content: url("../../assets/images/icon-maps.svg");
+          position: absolute;
+          top: 56%;
+          transform: translateY(-50%);
+        }
+        &::after {
+          content: url("../../assets/images/icon-arrow-right.svg");
+        }
+        .select-item--text {
+          margin-left: 20px;
+          font-family: "Be Vietnam Pro";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: calc(18 / 14);
+          color: var(--black100);
         }
       }
     }
