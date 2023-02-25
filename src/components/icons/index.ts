@@ -14,8 +14,11 @@ import IconClendar from "./IconClendar";
 import IconClock from "./IconClock";
 import IconClose from "./IconClose";
 import IconDining from "./IconDining";
+import IconEmail from "./IconEmail";
 import IconFacebook from "./IconFacebook";
+import IconFacebookV2 from "./IconFacebookV2";
 import IconFeeling from "./IconFeeling";
+import IconGoogle from "./IconGoogle";
 import IconHeart from "./IconHeart";
 import IconHeartV2 from "./IconHeartV2";
 import IconHeartV3 from "./IconHeartV3";
@@ -92,4 +95,7 @@ export {
   IconCar,
   IconMinus,
   IconPlus,
+  IconFacebookV2,
+  IconGoogle,
+  IconEmail,
 };

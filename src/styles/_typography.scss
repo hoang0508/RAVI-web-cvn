@@ -36,6 +36,15 @@
 
 @font-face {
   font-family: "Be Vietnam Pro";
+  src: url("../../src/assets/fonts/Be_Vietnam_Pro/BeVietnamPro-Light.ttf")
+    format("opentype");
+  font-style: normal;
+  font-display: auto;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Be Vietnam Pro";
   src: url("../../src/assets/fonts/Be_Vietnam_Pro/BeVietnamPro-Regular.ttf")
     format("opentype");
   font-style: normal;

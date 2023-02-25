@@ -5,7 +5,7 @@ interface ILabel {
   htmlFor?: string;
   className?: string;
   children: React.ReactNode;
-  colorLabel: string;
+  colorLabel?: string;
   labelMark: boolean;
 }
 
@@ -22,7 +22,7 @@ const Label = ({
       htmlFor={htmlFor}
       {...props}
       className={`label ${
-        colorLabel === "gray" ? "label-gray label" : "label"
+        colorLabel === "gray" ? "label-gray label" : ""
       } ${className}`}
     >
       <span className="label-text">{children}</span>

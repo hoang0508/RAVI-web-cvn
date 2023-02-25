@@ -116,15 +116,7 @@ const SearchInput = () => {
             </Option>
             <Option value="Hà Nội">
               <div className="select-item">
-                <div className="select-item--location">
-                  <span>
-                    <IconLocation />
-                  </span>
-                  <span className="select-item--text">Hà Nội</span>
-                </div>
-                <span className="select-item--arrow">
-                  <IconArrowRight />
-                </span>
+                <span className="select-item--text">Hà Nội</span>
               </div>
             </Option>
           </>

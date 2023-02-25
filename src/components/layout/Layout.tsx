@@ -8,9 +8,10 @@ import HeaderNavMenu from "./header/HeaderNavMenu";
 
 interface ILayout {
   layout: string;
+  footerHidden?: boolean;
 }
 
-const Layout = ({ layout }: ILayout) => {
+const Layout = ({ layout, footerHidden }: ILayout) => {
   let header;
   switch (layout) {
     case "layout-home":
@@ -32,7 +33,7 @@ const Layout = ({ layout }: ILayout) => {
     <>
       {header}
       <Outlet />
-      <Footer />
+      {footerHidden ? <div></div> : <Footer />}
     </>
   );
 };
