@@ -115,3 +115,8 @@
     transform: rotate(0deg);
   }
 }
+
+// MODAL
+:where(.css-dev-only-do-not-override-diro6f).ant-modal {
+  font-family: "Be Vietnam Pro";
+}

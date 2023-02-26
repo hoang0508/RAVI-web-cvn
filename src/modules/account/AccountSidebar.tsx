@@ -20,7 +20,7 @@ const sidebarLinks = [
     id: 2,
     title: "Lịch sự đặt phòng",
     icon: <IconHistorybook />,
-    url: "/history-book",
+    url: "/history-booking",
   },
   {
     id: 3,
@@ -61,7 +61,7 @@ const AccountSidebar = () => {
                   : "account-sidebar--link"
               }
             >
-              <span className="account-sidebar--linnk-icon">{item.icon}</span>
+              <span className="account-sidebar--link-icon">{item.icon}</span>
               <span className="account-sidebar--link-text">{item.title}</span>
             </NavLink>
           ))}

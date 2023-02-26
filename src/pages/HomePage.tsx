@@ -11,7 +11,7 @@ import HomeSearchNear from "../modules/home/HomeSearchNear";
 
 export interface IHomePageProps {}
 
-export function HomePage(props: IHomePageProps) {
+const HomePage = (props: IHomePageProps) => {
   return (
     <div className="container-fluid">
       <Banner heading="Đặt khách sạn dễ dàng" text="cùng RAVI" />
@@ -37,4 +37,6 @@ export function HomePage(props: IHomePageProps) {
       </div>
     </div>
   );
-}
+};
+
+export default HomePage;
