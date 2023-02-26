@@ -1,0 +1,83 @@
+.card-cancel {
+  &--custom {
+    width: 633px !important;
+    .ant-modal-content {
+      background-color: var(--white);
+      border: 1px solid var(--grayLight);
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      padding: 23px 18px 20px;
+      .ant-modal-header {
+        border-bottom: 1px solid var(--grayLight);
+        padding-bottom: 15px;
+        margin-bottom: 23px;
+      }
+      .ant-modal-body {
+        .card-history {
+          padding: 0;
+          border: transparent;
+          &--feature {
+            display: none;
+          }
+        }
+        .history-info {
+          &--list {
+            padding-top: 0;
+            padding-bottom: 20px;
+            border-top: transparent;
+            &:not(:last-child) {
+              border-bottom: 1px solid var(--grayLight);
+            }
+          }
+        }
+      }
+      .ant-modal-footer {
+        .ant-btn-default {
+          border: transparent;
+          font-family: "Be Vietnam Pro";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 10px;
+          line-height: calc(13 / 10);
+          color: var(--primaryColor);
+        }
+        .ant-btn-primary {
+          padding: 10px 20px;
+          font-family: "Be Vietnam Pro";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 10px;
+          line-height: calc(13 / 10);
+          color: #ffffff;
+          background: #ba9256;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+  &--total {
+    display: flex;
+    flex-direction: column;
+    gap: 8px 0;
+    text-align: right;
+    margin-bottom: 20px;
+    &-item {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0 140px;
+      span.item-price {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: calc(15 / 12);
+        color: var(--black100);
+      }
+      span {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: calc(15 / 12);
+        color: var(--black100);
+      }
+    }
+  }
+}

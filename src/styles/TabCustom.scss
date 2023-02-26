@@ -1,0 +1,40 @@
+.tab-custom {
+  .ant-tabs-nav-wrap {
+    border-bottom: 1px solid var(--grayLight);
+    .ant-tabs-nav-list {
+      gap: 0 32px;
+      margin-left: 16px;
+      .ant-tabs-tab {
+        margin: 0;
+        &-btn {
+          font-family: "Be Vietnam Pro";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: calc(18 / 14);
+          color: var(--black100);
+        }
+      }
+      .ant-tabs-tab-active {
+        .ant-tabs-tab-btn {
+          font-family: "Be Vietnam Pro";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: calc(18 / 14);
+          color: var(--primaryColor);
+        }
+      }
+      .ant-tabs-ink-bar {
+        height: 4px;
+        background: var(--primaryColor);
+        border-radius: 100px 100px 0px 0px;
+      }
+    }
+  }
+}
+
+:where(.css-dev-only-do-not-override-diro6f)[class^="ant-tabs"],
+:where(.css-dev-only-do-not-override-diro6f)[class*=" ant-tabs"] {
+  font-family: "Be Vietnam Pro";
+}

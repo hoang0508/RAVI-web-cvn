@@ -1,0 +1,21 @@
+.label-status {
+  padding: 2px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  line-height: 13px;
+  border-radius: 8px;
+  &--success {
+    background-color: var(--greenE1);
+    color: var(--green99);
+  }
+  &--pending {
+    background-color: var(--greenFA);
+    color: var(--orangeFA);
+  }
+  &--cancel {
+    background-color: var(--grayLight);
+    color: var(--gray98);
+  }
+}
