@@ -7,8 +7,9 @@ interface IButton {
   type: "button" | "submit" | "reset" | undefined;
   className?: string;
   kind?: string;
-  onClick?: () => void;
+  onClick?: (e: any) => void;
   href?: string;
+  disableBtn?: boolean;
 }
 
 const Button = ({
@@ -17,6 +18,7 @@ const Button = ({
   className = "",
   kind,
   href,
+  disableBtn,
   onClick,
 }: IButton) => {
   let classBtnKind;
@@ -52,6 +54,7 @@ const Button = ({
       onClick={onClick}
       type={type}
       className={`button ${kind ? classBtnKind : ""}   ${className}`}
+      disabled={disableBtn}
     >
       {children}
     </button>

@@ -14,31 +14,31 @@ const sidebarLinks = [
     id: 1,
     title: "Thông tin cá nhân",
     icon: <IconUser />,
-    url: "/account-info",
+    url: "/account/account-info",
   },
   {
     id: 2,
-    title: "Lịch sự đặt phòng",
+    title: "Lịch sử đặt phòng",
     icon: <IconHistorybook />,
-    url: "/history-booking",
+    url: "/account/history-booking",
   },
   {
     id: 3,
     title: "Mã khuyến mãi",
     icon: <Icongift />,
-    url: "/history-book",
+    url: "/account/voucher-code",
   },
   {
     id: 4,
     title: "Yêu thích",
     icon: <IconHeart />,
-    url: "/history-book",
+    url: "/account/favourite",
   },
   {
     id: 5,
     title: "Đánh giá",
     icon: <IconStarV3 />,
-    url: "/history-book",
+    url: "/account/evaluate",
   },
 ];
 

@@ -1,0 +1,21 @@
+.favourite {
+  max-width: 633px;
+  width: 100%;
+  margin-bottom: 118px;
+  &-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    .button--primary {
+      display: flex;
+      align-items: center;
+      gap: 0 10px;
+    }
+  }
+  &-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 36px 20px;
+  }
+}

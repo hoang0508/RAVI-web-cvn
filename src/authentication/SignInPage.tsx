@@ -13,12 +13,13 @@ import "./SignInPage.scss";
 
 const SignInPage = () => {
   const backgroundStyle = {
-    backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(39, 35, 35, 0.6)), 
     url(${bgSignIn}`,
   };
   const navigate = useNavigate();
-  const handleSingIn = () => {
-    navigate("/account-info");
+  const handleSingIn = (e: any) => {
+    e.preventDefault();
+    navigate("/", { state: { username: "tmduca8@gmail.com" } });
   };
   return (
     <div className="background signin" style={backgroundStyle}>
@@ -41,7 +42,7 @@ const SignInPage = () => {
               type="submit"
               kind="xl"
               className="signin-form--submit"
-              onClick={() => handleSingIn()}
+              onClick={(e) => handleSingIn(e)}
             >
               Tiếp tục
             </Button>

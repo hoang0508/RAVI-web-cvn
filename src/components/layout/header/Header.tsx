@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../../../assets/images/logo.png";
 import { IconHeart, IconHelp, IconUser } from "../../icons";
 import "./Header.scss";
@@ -9,21 +10,20 @@ const headerNav = [
   {
     id: 1,
     icon: <IconHelp />,
-    text: "Trợ giúp?",
+    text: "Trợ giúp ?",
+    url: "/",
   },
   {
     id: 2,
     icon: <IconHeart />,
     text: "Yêu thích",
-  },
-  {
-    id: 3,
-    icon: <IconUser />,
-    text: "Tài khoản",
+    url: "/",
   },
 ];
 
 export function Header(props: IHeaderProps) {
+  const location: any = useLocation();
+  const username = location?.state?.username;
   return (
     <>
       <div className="container-fluid header">
@@ -32,11 +32,27 @@ export function Header(props: IHeaderProps) {
         </div>
         <nav className="header-nav">
           {headerNav.map((item) => (
-            <div className="header-nav--list" key={item.id}>
+            <Link to={item.url} className="header-nav--list" key={item.id}>
               <span>{item.icon}</span>
               <span className="header-nav--text">{item.text}</span>
-            </div>
+            </Link>
           ))}
+          <Link
+            to={username ? "/account/account-info" : "/sign-in"}
+            className="header-nav--list"
+          >
+            <span>
+              <IconUser />
+            </span>
+            {username ? (
+              <span className="header-nav--text">
+                <span>Tài khoản của bạn</span>
+                <span className="header-nav--text-username">{username}</span>
+              </span>
+            ) : (
+              <span className="header-nav--text">Tài khoản</span>
+            )}
+          </Link>
         </nav>
       </div>
     </>
