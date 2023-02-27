@@ -1,6 +1,9 @@
 import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Layout, LayoutAccount } from "./components/layout";
+import EvaluatePage from "./pages/EvaluatePage";
+import FavouritePage from "./pages/FavouritePage";
+import VouncherCodePage from "./pages/VouncherCodePage";
 const SignInPage = lazy(() => import("./authentication/SignInPage"));
 const AccountPage = lazy(() => import("./pages/AccountPage"));
 const DetailsRoomPage = lazy(() => import("./pages/DetailsRoomPage"));
@@ -26,8 +29,8 @@ const App = () => {
       >
         <Routes>
           {/* Router Home */}
-          <Route element={<Layout layout="layout-home" />}>
-            <Route path="/" element={<HomePage />}></Route>
+          <Route path="/" element={<Layout layout="layout-home" />}>
+            <Route index element={<HomePage />}></Route>
           </Route>
 
           {/* Router search */}
@@ -72,8 +75,23 @@ const App = () => {
 
           {/* Router sidebar */}
           <Route element={<LayoutAccount />}>
-            <Route path="/account-info" element={<AccountPage />}></Route>
-            <Route path="/history-booking" element={<HistoryBooking />}></Route>
+            <Route
+              path="/account/account-info"
+              element={<AccountPage />}
+            ></Route>
+            <Route
+              path="/account/history-booking"
+              element={<HistoryBooking />}
+            ></Route>
+            <Route
+              path="/account/voucher-code"
+              element={<VouncherCodePage />}
+            ></Route>
+            <Route
+              path="/account/favourite"
+              element={<FavouritePage />}
+            ></Route>
+            <Route path="/account/evaluate" element={<EvaluatePage />}></Route>
           </Route>
         </Routes>
       </Suspense>

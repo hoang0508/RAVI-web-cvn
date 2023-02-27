@@ -23,6 +23,7 @@ import IconGoogle from "./IconGoogle";
 import IconHeart from "./IconHeart";
 import IconHeartV2 from "./IconHeartV2";
 import IconHeartV3 from "./IconHeartV3";
+import IconHeartV4 from "./IconHeartV4";
 import IconHelp from "./IconHelp";
 import IconHistorybook from "./IconHistorybook";
 import IconHotel from "./IconHotel";
@@ -30,13 +31,18 @@ import IconIntagram from "./IconIntagram";
 import IconLine from "./IconLine";
 import IconLineV2 from "./IconLineV2";
 import IconLineV3 from "./IconLineV3";
+import IconLineV4 from "./IconLineV4";
 import IconLocation from "./IconLocation";
 import IconMapsV2 from "./IconMapsV2";
+import IconMapV3 from "./IconMapV3";
 import IconMinus from "./IconMinus";
 import IconOverView from "./IconOverView";
 import IconParlking from "./IconParlking";
+import IconPencil from "./IconPencil";
+import IconPencilV2 from "./IconPencilV2";
 import IconPlus from "./IconPlus";
 import IconPool from "./IconPool";
+import IconRoket from "./IconRoket";
 import IconSearchUser from "./IconSearchUser";
 import IconShare from "./IconShare";
 import IconShuttle from "./IconShuttle";
@@ -102,4 +108,10 @@ export {
   IconEmail,
   IconHistorybook,
   Icongift,
+  IconLineV4,
+  IconHeartV4,
+  IconPencil,
+  IconPencilV2,
+  IconMapV3,
+  IconRoket,
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import { Header } from "./header/Header";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Footer from "./footer/Footer";
 import HeaderSearch from "./header/HeaderSearch";
 import HeaderDetails from "./header/HeaderDetails";

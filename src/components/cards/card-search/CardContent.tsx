@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import CardInfoRoom from "../../common/cards-components/CardInfoRoom";
+import CardTitle from "../../common/cards-components/CardTitle";
 import { IconAcreage, IconBedroom, IconStar } from "../../icons";
 import IconUserv2 from "../../icons/IconUserv2";
 
@@ -12,9 +13,7 @@ const CardContent = () => {
   return (
     <div className="search-item--content" onClick={() => handleNavigate()}>
       <CardInfoRoom></CardInfoRoom>
-      <h3 className="content-title">
-        Cherry Hotel & Apartment Da Nang - Phoenix 2 Hotel
-      </h3>
+      <CardTitle title="Cherry Hotel & Apartment Da Nang - Phoenix 2 Hotel"></CardTitle>
       <div className="content-vote">
         <div className="content-vote--rating">
           <span className="content-vote--rating-number">5.0</span>

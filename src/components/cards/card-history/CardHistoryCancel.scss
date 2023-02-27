@@ -48,8 +48,8 @@
           font-weight: 700;
           font-size: 10px;
           line-height: calc(13 / 10);
-          color: #ffffff;
-          background: #ba9256;
+          color: var(--white);
+          background-color: var(--primaryColor);
           border-radius: 8px;
         }
       }

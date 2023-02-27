@@ -12,6 +12,12 @@
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
+  &:disabled {
+    // opacity: 0.12;
+    border: 1px solid rgba(186, 146, 86, 0.12);
+    color: var(--primaryColor);
+    opacity: 0.38;
+  }
   &--full {
     width: 100%;
     background-color: transparent;

@@ -1,0 +1,14 @@
+.vouncher-discount {
+  margin-bottom: 46px;
+  border: 1px solid var(--grayLight);
+  border-radius: 8px;
+  padding: 20px;
+  &--code {
+    display: flex;
+    align-items: center;
+    gap: 0 4px;
+    .input-comp {
+      width: 50%;
+    }
+  }
+}
