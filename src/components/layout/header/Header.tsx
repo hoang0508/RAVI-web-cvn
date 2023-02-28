@@ -11,13 +11,13 @@ const headerNav = [
     id: 1,
     icon: <IconHelp />,
     text: "Trợ giúp ?",
-    url: "/",
+    url: "/faq-answers",
   },
   {
     id: 2,
     icon: <IconHeart />,
     text: "Yêu thích",
-    url: "/",
+    url: "/account/favourite",
   },
 ];
 

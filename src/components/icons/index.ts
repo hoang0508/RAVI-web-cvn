@@ -4,6 +4,7 @@ import IconArrow from "./IconArrow";
 import IconArrowLeft from "./IconArrowLeft";
 import IconArrowRight from "./IconArrowRight";
 import IconArrowRightV2 from "./IconArrowRightV2";
+import IconArrowTop from "./IconArrowTop";
 import IconArrowV2 from "./IconArrowV2";
 import IconBack from "./IconBack";
 import IconBedroom from "./IconBedroom";
@@ -114,4 +115,5 @@ export {
   IconPencilV2,
   IconMapV3,
   IconRoket,
+  IconArrowTop,
 };

@@ -1,9 +1,10 @@
 import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Layout, LayoutAccount } from "./components/layout";
-import EvaluatePage from "./pages/EvaluatePage";
-import FavouritePage from "./pages/FavouritePage";
-import VouncherCodePage from "./pages/VouncherCodePage";
+const EvaluatePage = lazy(() => import("./pages/EvaluatePage"));
+const FaqAnswerPage = lazy(() => import("./pages/FaqAnswerPage"));
+const FavouritePage = lazy(() => import("./pages/FavouritePage"));
+const VouncherCodePage = lazy(() => import("./pages/VouncherCodePage"));
 const SignInPage = lazy(() => import("./authentication/SignInPage"));
 const AccountPage = lazy(() => import("./pages/AccountPage"));
 const DetailsRoomPage = lazy(() => import("./pages/DetailsRoomPage"));
@@ -92,6 +93,18 @@ const App = () => {
               element={<FavouritePage />}
             ></Route>
             <Route path="/account/evaluate" element={<EvaluatePage />}></Route>
+          </Route>
+
+          <Route
+            element={
+              <Layout
+                layout="layout-headerNav"
+                backTo="back-search"
+                textTo="Quay lại tìm kiếm"
+              />
+            }
+          >
+            <Route path="/faq-answers" element={<FaqAnswerPage />}></Route>
           </Route>
         </Routes>
       </Suspense>
