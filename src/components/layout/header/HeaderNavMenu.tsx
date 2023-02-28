@@ -17,6 +17,9 @@ const HeaderNavMenu = ({ backTo, textTo }: IHeaderNavMenu) => {
     case "back-home":
       linkTo = "/";
       break;
+    case "back-blog":
+      linkTo = "/blog";
+      break;
     case "back-details-room":
       linkTo = "/detail-room";
       break;
@@ -24,7 +27,6 @@ const HeaderNavMenu = ({ backTo, textTo }: IHeaderNavMenu) => {
     default:
       break;
   }
-  console.log(linkTo);
   return (
     <div className="d-flex-cb header-nav--menu">
       <Link to={linkTo} className="header-nav--back">
