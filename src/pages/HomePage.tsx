@@ -11,6 +11,24 @@ import HomeSearchNear from "../modules/home/HomeSearchNear";
 
 export interface IHomePageProps {}
 
+const dataBlog = [
+  {
+    id: 1,
+    title: "Shinrin-yoku: Nghệ thuật chữa lành của tắm rừng",
+    date: "03.10.2022",
+  },
+  {
+    id: 2,
+    title: "Shinrin-yoku: Nghệ thuật chữa lành của tắm rừng",
+    date: "03.10.2022",
+  },
+  {
+    id: 3,
+    title: "Shinrin-yoku: Nghệ thuật chữa lành của tắm rừng",
+    date: "03.10.2022",
+  },
+];
+
 const HomePage = (props: IHomePageProps) => {
   return (
     <div className="container-fluid">
@@ -32,7 +50,10 @@ const HomePage = (props: IHomePageProps) => {
         <Gap gap="gap-40" />
         <HomeFamousHotel></HomeFamousHotel>
         <Gap />
-        <BlogList />
+        <BlogList
+          heading="Cảm hứng cho những chuyến du lịch"
+          dataBlog={dataBlog}
+        />
         <Gap gap="gap-120" />
       </div>
     </div>

@@ -1,22 +1,27 @@
 import React from "react";
 import { Heading } from "../../components/common/heading";
 import BlogItem from "./BlogItem";
-
 import "./BlogList.scss";
 
-const BlogList = () => {
+interface IDateBlogItem {
+  id: number;
+  date: string;
+  title: string;
+}
+
+interface IBlogList {
+  dataBlog: IDateBlogItem[];
+  heading: string;
+}
+
+const BlogList = ({ dataBlog, heading = "" }: IBlogList) => {
   return (
     <div>
-      <Heading
-        size="small"
-        heading="Cảm hứng cho những chuyến du lịch"
-      ></Heading>
+      <Heading size="small" heading={heading}></Heading>
       <div className="blog-list">
-        {Array(3)
-          .fill(0)
-          .map((item, index) => (
-            <BlogItem key={index}></BlogItem>
-          ))}
+        {dataBlog &&
+          dataBlog.length > 0 &&
+          dataBlog.map((item) => <BlogItem key={item.id} blogItem={item} />)}
       </div>
     </div>
   );

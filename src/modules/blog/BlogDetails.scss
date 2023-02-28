@@ -1,0 +1,115 @@
+.blog-details {
+  &--banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 16px 0;
+      .heading--big {
+        max-width: 634px;
+        width: 100%;
+      }
+    }
+    &-nav {
+      display: flex;
+      align-items: center;
+      gap: 0 17px;
+      margin-left: 17px;
+      li {
+        font-size: 14px;
+        line-height: calc(18 / 14);
+        color: var(--white);
+        list-style: disc;
+        margin-right: 17px;
+      }
+      &-link {
+        font-size: 14px;
+        line-height: calc(18 / 14);
+        color: var(--white);
+        position: relative;
+      }
+    }
+  }
+  &--content {
+    display: flex;
+    align-items: baseline;
+    gap: 0 167px;
+    margin-bottom: 80px;
+    .content-left {
+      display: flex;
+      align-items: center;
+      gap: 0 22px;
+      font-size: 16px;
+      line-height: calc(20 / 16);
+      display: flex;
+      align-items: center;
+      color: var(--black100);
+    }
+    .content-right {
+      flex: 1;
+      &--desc {
+        margin-bottom: 40px;
+        &-define {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: calc(22 / 16);
+          color: var(--black100);
+          margin-bottom: 15px;
+        }
+        &-location {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: calc(22 / 14);
+          color: var(--black100);
+        }
+      }
+      &--topic {
+        &:not(:last-child) {
+          margin-bottom: 40px;
+        }
+        .topic-text {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: calc(22 / 14);
+          color: var(--black100);
+          margin-bottom: 20px;
+        }
+        .topic-image {
+          height: 264px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+          }
+        }
+        .topic-list {
+          display: flex;
+          flex-direction: column;
+          gap: 22px 0;
+          li {
+            list-style: disc;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: calc(22 / 14);
+            color: #252525;
+          }
+        }
+      }
+    }
+  }
+  &--register {
+    width: 100%;
+    background: rgba(186, 146, 86, 0.2);
+    margin-bottom: 80px;
+    .register-mail {
+      max-width: 960px;
+      width: 100%;
+      margin: 0 auto;
+      background: none;
+    }
+  }
+}

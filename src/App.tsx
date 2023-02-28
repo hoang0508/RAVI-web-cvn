@@ -1,6 +1,8 @@
 import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Layout, LayoutAccount } from "./components/layout";
+import BlogDetails from "./modules/blog/BlogDetails";
+import BlogPage from "./pages/BlogPage";
 const EvaluatePage = lazy(() => import("./pages/EvaluatePage"));
 const FaqAnswerPage = lazy(() => import("./pages/FaqAnswerPage"));
 const FavouritePage = lazy(() => import("./pages/FavouritePage"));
@@ -95,6 +97,7 @@ const App = () => {
             <Route path="/account/evaluate" element={<EvaluatePage />}></Route>
           </Route>
 
+          {/* Route FAQ */}
           <Route
             element={
               <Layout
@@ -105,6 +108,30 @@ const App = () => {
             }
           >
             <Route path="/faq-answers" element={<FaqAnswerPage />}></Route>
+          </Route>
+
+          <Route
+            element={
+              <Layout
+                layout="layout-headerNav"
+                backTo="back-home"
+                textTo="Quay lại trang chủ"
+              />
+            }
+          >
+            <Route path="/blog" element={<BlogPage />}></Route>
+          </Route>
+
+          <Route
+            element={
+              <Layout
+                layout="layout-headerNav"
+                backTo="back-blog"
+                textTo="Quay lại trang blog"
+              />
+            }
+          >
+            <Route path="/blog/:id" element={<BlogDetails />}></Route>
           </Route>
         </Routes>
       </Suspense>
