@@ -8,7 +8,7 @@ interface IHeading {
 }
 
 const Heading = ({ heading, className = "", size = "" }: IHeading) => {
-  let classHeading;
+  let classHeading = "";
   switch (size) {
     case "normal":
       classHeading = "heading";

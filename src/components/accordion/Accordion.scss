@@ -1,0 +1,43 @@
+.custom-accrodion {
+  .ant-collapse-item {
+    border-bottom: 1px solid var(--grayLight);
+    margin-bottom: 30px;
+    padding-bottom: 16px;
+    &:last-child {
+      border-bottom: 1px solid var(--grayLight);
+      padding-bottom: 16px;
+    }
+    .ant-collapse-arrow {
+      transform: rotate(0);
+      transition: all 0.3s ease;
+    }
+    .ant-collapse-header {
+      padding: 0;
+    }
+    .ant-collapse-header-text {
+      font-family: "Be Vietnam Pro";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: calc(20 / 16);
+      color: var(--black100);
+    }
+    .ant-collapse-content {
+      .ant-collapse-content-box {
+        font-family: "Be Vietnam Pro";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: calc(20 / 16);
+        color: var(--gray98);
+      }
+    }
+  }
+  .ant-collapse-item-active {
+    transition: all 0.3s ease;
+    .arrow-rotate {
+      transition: all 0.3s ease;
+      transform: rotate(180deg);
+    }
+  }
+}

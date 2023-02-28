@@ -21,6 +21,11 @@ const SignInPage = () => {
     e.preventDefault();
     navigate("/", { state: { username: "tmduca8@gmail.com" } });
   };
+
+  const handleNavigateFaq = () => {
+    navigate("/faq-answers");
+  };
+
   return (
     <div className="background signin" style={backgroundStyle}>
       <div className="signin-main">
@@ -66,7 +71,12 @@ const SignInPage = () => {
             sint. Velit officia consequat duis enim velit mollit. Exercitation
             veniam consequat sunt nostrud amet.
           </p>
-          <Button type="button" kind="sm" className="signin-support">
+          <Button
+            type="button"
+            kind="sm"
+            className="signin-support"
+            onClick={() => handleNavigateFaq()}
+          >
             Bạn cần hỗ trợ?
           </Button>
         </div>
