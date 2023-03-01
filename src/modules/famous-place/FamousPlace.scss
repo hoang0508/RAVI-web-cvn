@@ -1,0 +1,19 @@
+.famous-place {
+  margin-bottom: 120px;
+  &--banner {
+    margin-bottom: 60px;
+    padding: 212px 0 0 241px;
+    .heading--big {
+      max-width: 634px;
+      width: 100%;
+    }
+  }
+  &--heading {
+    margin-bottom: 20px;
+  }
+  &--list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px 20px;
+  }
+}

@@ -1,0 +1,18 @@
+.promotional {
+  margin-bottom: 120px;
+  &-banner {
+    .banner {
+      border-radius: 0;
+      &-title {
+        max-width: 841px;
+        width: 100%;
+      }
+    }
+  }
+  &-list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px 20px;
+  }
+}

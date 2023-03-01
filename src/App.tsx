@@ -2,7 +2,11 @@ import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Layout, LayoutAccount } from "./components/layout";
 import BlogDetails from "./modules/blog/BlogDetails";
-import BlogPage from "./pages/BlogPage";
+import FamousPlacePage from "./pages/FamousPlacePage";
+const BlogPage = lazy(() => import("./pages/BlogPage"));
+const PromotionalOffersPage = lazy(
+  () => import("./pages/PromotionalOffersPage")
+);
 const EvaluatePage = lazy(() => import("./pages/EvaluatePage"));
 const FaqAnswerPage = lazy(() => import("./pages/FaqAnswerPage"));
 const FavouritePage = lazy(() => import("./pages/FavouritePage"));
@@ -120,6 +124,11 @@ const App = () => {
             }
           >
             <Route path="/blog" element={<BlogPage />}></Route>
+            <Route
+              path="/promotional-offers"
+              element={<PromotionalOffersPage />}
+            ></Route>
+            <Route path="/famous-place" element={<FamousPlacePage />}></Route>
           </Route>
 
           <Route

@@ -32,7 +32,7 @@ const dataBlog = [
 const HomePage = (props: IHomePageProps) => {
   return (
     <div className="container-fluid">
-      <Banner heading="Đặt khách sạn dễ dàng" text="cùng RAVI" />
+      <Banner heading="Đặt khách sạn dễ dàng cùng RAVI" />
       <div className="container">
         <HomeSearchNear />
         <Gap />
