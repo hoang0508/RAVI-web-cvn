@@ -10,6 +10,7 @@ interface IBannerGlobal {
   buttonText: string;
   bannerImage: string;
   gradientBG?: string;
+  onClick?: () => void;
 }
 
 const BannerGlobal = ({
@@ -20,6 +21,7 @@ const BannerGlobal = ({
   buttonText,
   bannerImage,
   gradientBG,
+  onClick,
 }: IBannerGlobal) => {
   const backgroundStyle = {
     backgroundImage: `${gradientBG ? gradientBG : ""} url(${bannerImage}`,
@@ -29,7 +31,7 @@ const BannerGlobal = ({
       <div className={`${className}`}>
         <Heading className="" size="big" heading={heading}></Heading>
         <TextBanner text={text}></TextBanner>
-        <Button type="button" kind="xl">
+        <Button type="button" kind="xl" onClick={onClick}>
           {buttonText}
         </Button>
       </div>
